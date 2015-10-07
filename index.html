@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+	<meta charset="UTF-8">
+	<title>Content Box Widget</title>
+	<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-xs.css">
+</head>
+<body ng-controller="WidgetController">
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Content Box Widget</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-header">
+					<h1>Content Box Widget</h1>
+				</div>
+
+				<box-widget ng-show="w.show"></box-widget>
+				<div class="alert alert-danger" ng-show="w.error">
+					Sorry! No data available. Please, try again later.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<p class="text-center"><a href="http://www.tiagomatos.com" target="_blank">Tiago Matos - web developer</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="assets/libs/jquery/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/libs/angularjs/js/angular.min.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

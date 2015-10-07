@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* ----------------------------------------------
+	Global classes
+	---------------------------------------------- */
+	/* HTML */
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+		body {
+			padding-top: 60px;
+			margin-bottom: 60px;
+		}
+
+/* ----------------------------------------------
+	Body
+	---------------------------------------------- */
+	.panel-heading a:after {
+	    float: right;
+	    font-family: 'FontAwesome'; color: grey;
+	    content: '\f078';
+	}
+	.panel-heading a.collapsed:after {
+	    content: '\f077';
+	}
+	.prev,
+	.next {
+		text-align: center;
+	}
+
+/* ----------------------------------------------
+	Footer
+	---------------------------------------------- */
+	.footer {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		background-color: #f5f5f5;
+	}
+	.footer p {
+		margin: 10px 0 !important;
+	}
+
+@media (min-width: 992px) {
+	.prev {
+		text-align: left;
+	}
+	.next {
+		text-align: right;
+	}
+}

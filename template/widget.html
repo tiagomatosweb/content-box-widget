@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			<a data-toggle="collapse" data-target="#collapse-widget" href="javascript:void(0)">{[{w.json.title}]}</a>
+		</h3>
+	</div>
+
+	<div id="collapse-widget" class="panel-collapse collapse in">
+		<div class="panel-body">
+			<h4>{[{w.itemSelected.title}]}</h4>
+			<hr>
+			<p ng-bind-html="w.renderHtml(w.itemSelected.description)">{[{w.itemSelected.description}]}</p>
+		</div>
+	</div>
+
+	<div class="panel-footer">
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<div class="prev"><a href="javascript:void(0)" ng-click="w.prev(w.itemSelected)"><i class="fa fa-chevron-left"></i> Prev</a></div>
+			</div>
+
+			<div class="col-xs-12 col-md-6">
+				<div class="next"><a href="javascript:void(0)" ng-click="w.next(w.itemSelected)">{[{w.itemSelectedNextTitle}]} <i class="fa fa-chevron-right"></i></a></div>
+			</div>
+		</div>
+
+	</div>
+</div>
